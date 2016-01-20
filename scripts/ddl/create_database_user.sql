@@ -1,0 +1,6 @@
+CREATE DATABASE pramati CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE USER 'web'@'%' IDENTIFIED by 'web';
+GRANT ALL PRIVILEGES ON pramati.* TO 'web'@'%' WITH GRANT OPTION;
+CREATE USER 'web'@'localhost' IDENTIFIED by 'web';
+GRANT ALL PRIVILEGES ON pramati.* TO 'web'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
